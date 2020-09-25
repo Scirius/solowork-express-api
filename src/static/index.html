@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Node.js exercise</title>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/collapsible.css" />
+	</head>
+	<body>
+		<div class="content-wrapper">
+		<h1>Node.js exercise, API+routing</h1>
+		<h2>Introduction</h2>
+		<p>This is a coding exercise for WBS Coding School Full Stack Web/App Development Course.</p>
+		<div class="collapsible">
+			<input id="c-endpoints" class="c-toggle" type="checkbox" checked>
+			<label for="c-endpoints" class="c-toggle-label">Endpoints</label>
+			<div class="collapsible-content">
+				<div class="content-inner">
+					<ul>
+						<li>PATH /users</li>
+						<ul>
+							<li>
+								<span class="element-description">Defined in usersRoutes.js</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /users/</span>
+								<span class="element-description">Displays all users</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /users/:id</span>
+								<span class="element-description">Gets single user</span>
+							</li>
+							<li>
+								<span class="element-intro">PUT /users/:id</span>
+								<span class="element-description">Updates user (fields 'firstname' and 'lastname' are rquired)</span>
+							</li>
+							<li>
+								<span class="element-intro">DELETE /users/:id</span>
+								<span class="element-description">Deletes the given user</span>
+							</li>
+						</ul>
+						<li>PATH /</li>
+						<ul>
+							<li>
+								<span class="element-intro">GET /</span>
+								<span class="element-description">Displays static html website explanation (this)</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /static</span>
+								<span class="element-description">Static folder for html intro</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /styles</span>
+								<span class="element-description">Static folder for css assets</span>
+							</li>
+						</ul>
+						<li>PATH /demo/</li>
+						<ul>
+							<li>
+								<span class="element-description">Defined in demoRoutes.js</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /demo/recreate</span>
+								<span class="element-description">Allows you to reset demo table and sample data</span>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="collapsible">
+			<input id="c-tools" class="c-toggle" type="checkbox">
+			<label for="c-tools" class="c-toggle-label">Tools</label>
+			<div class="collapsible-content">
+				<div class="content-inner">
+					<ul>
+						<li>
+							API Testing
+							<ul>
+								<li>
+									<span class="element-intro">Postman (<a href="https://web.postman.co/" target="_blank" alt="Postman Web">Webtool</a>)</span
+										><br />
+									<span class="element-description"
+										>offers great tools for endpoint testing with a wide variety of methods (GET, POST, PUT, DELETE, PATCH, UPDATE...)
+									</span>
+								</li>
+								<li>
+									<span class="element-intro"
+										>Postman (<a href="https://www.postman.com/downloads/" target="_blank" alt="Postman App">Desktop App</a>)</span
+										><br />
+									<span class="element-description">the desktop app is available for Win / Mac OS / Linux</span>
+									</span>
+								</li>
+							</ul>
+            </li>
+            <li>
+                PostgreSQL Backend
+                <ul>
+                  <li>
+                    <span class="element-intro">Elephant SQL (<a href="https://www.elephantsql.com/" target="_blank" alt="Elephant SQL">PostgreSQL as a Service</a>)</span
+                      ><br />
+                    <span class="element-description">
+											offers a free plan for developers to host PostgreSQL databases
+                    </span>
+                  </li>
+                </ul>
+              </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="collapsible">
+			<input id="c-stack" class="c-toggle" type="checkbox">
+			<label for="c-stack" class="c-toggle-label">Stack</label>
+			<div class="collapsible-content">
+				<div class="content-inner">
+					<ul>
+						<li>Node.js</li>
+						<li>Express</li>
+						<li>PG</li>
+						<li>Routing</li>
+						<li>SQL (PostgreSQL on Elephant SQL)</li>
+						<li>HTML5, CSS3, JS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="collapsible">
+				<input id="c-notes" class="c-toggle" type="checkbox">
+				<label for="c-notes" class="c-toggle-label">Notes to myself</label>
+				<div class="collapsible-content">
+					<div class="content-inner">
+						<ul>
+							<li>DB Connection should be done with async/await</li>
+							<li>Sanitizing of query, params, headers</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<p>Cheers, J</p
+	</body>
+</html>

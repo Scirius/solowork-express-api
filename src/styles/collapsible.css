@@ -1,0 +1,56 @@
+/* styles for collapsible elements on homepage */
+/* collapsible is CSS-only, based on input type checkbox trick */
+input[type="checkbox"] {
+  display: none;
+}
+
+.collapsible {
+  margin: 0;
+}
+
+.c-toggle-label h2 {
+  display: inline-block;
+}
+
+.c-toggle-label {
+  display: block;
+  font-weight: bold;
+  background: #ddd;
+  border-bottom: 3px solid #ccc;
+  padding: 15px 30px;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.c-toggle-label:hover {
+  color: orangered;
+}
+
+.c-toggle-label::before {
+  content: " ";
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: 0.7rem;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-out;
+}
+.c-toggle:checked + .c-toggle-label::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding-left: 30px;
+}
+
+.c-toggle:checked + .c-toggle-label + .collapsible-content {
+  max-height: inherit;
+  opacity: 1;
+}

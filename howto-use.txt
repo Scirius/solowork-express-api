@@ -1,0 +1,16 @@
+Use tool or script to send data to endpoints, e.g.
+
+https://web.postman.co/
+
+
+to create a matching table on elephant sql:
+https://api.elephantsql.com/
+
+CREATE TABLE users (id serial primary key, firstname varchar(255), lastname varchar(255));
+INSERT INTO users (firstname, lastname) VALUES ('Joe', 'Cool');
+INSERT INTO users (firstname, lastname) VALUES ('Erika', 'Mustermann');
+INSERT INTO users (firstname, lastname) VALUES ('Erik', 'Mustermann');
+INSERT INTO users (firstname, lastname) VALUES ('John', 'Doe');
+INSERT INTO users (firstname, lastname) VALUES ('Elena', 'Doe');
+
+Alternatively you can call GET route /demo/recreate from URL or frontend/postman.

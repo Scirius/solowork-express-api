@@ -1,0 +1,108 @@
+/* styles for static homepage on / */
+
+body {
+  font-family: sans-serif;
+  padding: 50px;
+  background: #ccc;
+  font-size: 14px;
+  overflow-y: scroll;
+}
+
+a,
+a:link {
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #669;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  background: #fff;
+  border: 5px solid black;
+  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.8);
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.content-wrapper h1,
+.content-wrapper h2 {
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.content-wrapper p {
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.content-wrapper h1 {
+  background: #ccc;
+  border-bottom: 3px solid #bbb;
+}
+
+.content-wrapper h2 {
+  background: #ddd;
+  border-bottom: 3px solid #ccc;
+}
+
+.content-wrapper h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.content-wrapper ul {
+  margin-left: 8px;
+}
+.content-wrapper > ul,
+.collapsible-wrapper > ul {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 12px;
+}
+.content-wrapper ul li,
+.collapsible ul li {
+  margin-top: 4px;
+}
+
+.content-wrapper > ul > li,
+.collapsible > ul > li,
+.content-inner > ul > li {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+ul li::before {
+  content: "\25FD"; /* Arrow right */
+  color: orangered;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -25px;
+  margin-right: 7px;
+}
+
+.element-intro {
+  color: orangered;
+  font-weight: bold;
+}
+.element-description {
+  font-weight: normal;
+  padding-right: 30px;
+}
+.content-inner {
+  padding-right: 30px;
+}
