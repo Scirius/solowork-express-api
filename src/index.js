@@ -24,8 +24,9 @@ app.use("/users", usersRoutes);
 app.use("/demo", demoRoutes);
 
 /* handling of static pages, define all folders for html output as static */
-app.use("/static", express.static(__dirname + "/static"));
 app.use("/styles", express.static(__dirname + "/styles"));
+app.use("/static", express.static(__dirname + "/static"));
+
 /* forward all URL routes not matched above to static routes (homepage, 404...) */
 app.use("/", staticRoutes);
 
